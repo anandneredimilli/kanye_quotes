@@ -24,9 +24,9 @@ def change_quote():
 window = tkinter.Tk()
 window.title('kanye says...')
 window.config(padx=30,pady=30)
-canvas = tkinter.Canvas(height=400,width=300)
+canvas = tkinter.Canvas(height=500,width=350)
 background = tkinter.PhotoImage(file='background.png')
-canvas.create_image(150,200, image=background)
+canvas.create_image(175,250, image=background)
 
 canvas.grid(row=0,column=0)
 
@@ -35,5 +35,5 @@ kanye_image = tkinter.PhotoImage(file="kanye.png")
 kanye_button = tkinter.Button(image=kanye_image,command=change_quote)
 kanye_button.grid(row=1,column=0)
 
-quote_text = canvas.create_text(160,170,width=200, text="hello",fill="white", font=("Arial", 20,"normal"))
+quote_text = canvas.create_text(170,200,width=250, text="hello",fill="white", font=("Arial", 20,"normal"))
 window.mainloop()
